@@ -8,6 +8,8 @@ metadata:
     argocd/app-name: "my-kubernetes-component"
     backstage.io/techdocs-ref: dir:.
     backstage.io/kubernetes-namespace: suxess-it-dev
+    grafana/dashboard-selector: "(tags @> '4-golden-signals')"
+    grafana/overview-dashboard: "https://graf-sx-grafana.apps.cluster1.mcp.pitagora.at/d/KRlE7mE4z/4-golden-signals-sx-cnp?orgId=1&refresh=5s&var-namespace=suxess-it-dev&var-workload=sx-monitor-demo-app&var-service=sx-monitor-demo-app-service"
 spec:
   type: service
   lifecycle: experimental
