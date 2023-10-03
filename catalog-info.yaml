@@ -10,7 +10,7 @@ metadata:
     kubecost.com/deployment-name: my-kubernetes-component
     grafana/dashboard-selector: "(tags @> '4GoldenSignals')"
     grafana/overview-dashboard: "https://grafana.apps.cluster1.mcp.pitagora.at/d/KRlE7mE4z/4-golden-signals-sx-cnp?orgId=1&refresh=5s&var-namespace=suxess-it-dev&var-workload=my-kubernetes-component&var-service=sx-monitor-demo-app-service"
-    vault.io/secrets-path: secret/openshiftpullsecret
+    vault.io/secrets-path: openshiftpullsecret
 spec:
   type: service
   lifecycle: experimental
