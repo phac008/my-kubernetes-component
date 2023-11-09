@@ -16,3 +16,27 @@ spec:
   type: service
   lifecycle: experimental
   owner: sx-authors
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "secretdemo"
+  annotations:
+    vault.io/secrets-path: 'secretdemo'
+    #vault.io/secrets-engine: 'secrets'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: sx-authors
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "secretdemo2"
+  annotations:
+    vault.io/secrets-path: 'secretdemo2'
+    vault.io/secrets-engine: 'sx-kv'
+spec:
+  type: service
+  lifecycle: experimental
+  owner: sx-authors
