@@ -4,7 +4,7 @@ metadata:
   name: "my-kubernetes-component"
   annotations:
     github.com/project-slug: phac008/my-kubernetes-component
-    backstage.io/kubernetes-id: "my-kubernetes-component"
+    backstage.io/kubernetes-id: my-kubernetes-component
     argocd/app-name: "my-kubernetes-component"
     backstage.io/techdocs-ref: dir:.
     kubecost.com/deployment-name: my-kubernetes-component
